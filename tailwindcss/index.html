@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="stylesheet" href="./build/app.css" />
+  </head>
+  <body class="p-5">
+    <!-- <div class="pt-12">
+      <h1
+        class="text-center text-[#ffa400] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-5"
+      >
+        Live anywhere
+      </h1>
+      <h2 class="text-center font-light text-xl text-[#07a787] mb-35">
+        Keep calm & travel on
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-[37px] max-w-6xl mx-auto px-[15px] gap-y-7 lg:gap-y-0">
+        <div>
+          <div class="h-96 mb-5">
+            <img
+              src="https://images.unsplash.com/photo-1614606800824-8fc26922dbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"
+              alt=""
+              class="w-full h-full rounded-lg object-cover"
+            />
+          </div>
+          <h3 class="text-center font-medium text-lg mb-3">
+            Enjoy the great cold
+          </h3>
+          <span class="block text-center text-gray-400 text-sm"
+            >6,789 properties</span
+          >
+        </div>
+        <div>
+          <div class="h-96 mb-5">
+            <img
+              src="https://images.unsplash.com/photo-1614606800824-8fc26922dbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"
+              alt=""
+              class="w-full h-full rounded-lg object-cover"
+            />
+          </div>
+          <h3 class="text-center font-medium text-lg mb-3">
+            Enjoy the great cold
+          </h3>
+          <span class="block text-center text-gray-400 text-sm"
+            >6,789 properties</span
+          >
+        </div>
+        <div>
+          <div class="h-96 mb-5">
+            <img
+              src="https://images.unsplash.com/photo-1614606800824-8fc26922dbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"
+              alt=""
+              class="w-full h-full rounded-lg object-cover"
+            />
+          </div>
+          <h3 class="text-center font-medium text-lg mb-3">
+            Enjoy the great cold
+          </h3>
+          <span class="block text-center text-gray-400 text-sm"
+            >6,789 properties</span
+          >
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="group p-10 border border-red-50">
+      <button
+        class="inline-block py-3 px-10 m-5 text-white bg-[#6a5af9] lg:group-hover:bg-red-400 rounded-lg transition-colors"
+      >
+        Confirm
+      </button>
+    </div> -->
+
+    <!-- <input
+      type="text"
+      class="py-3 px-3 border border-[#ccc] outline-none rounded-xl m-3 focus:border-[#ffa400] transition-all"
+    />
+
+    <button
+      class="inline-block py-3 px-10 m-5 text-white bg-[#6a5af9] rounded-lg transition-all motion-safe:hover:scale-110 disabled:opacity-50"
+      disabled
+    >
+      Confirm
+    </button>
+
+    <input 
+      type="checkbox" 
+      class="appearance-none checked:bg-blue-500 w-5 h-5 border border-[#ffa400]" 
+    /> -->
+    <!-- appearance-none để loại bỏ mặc định để css theo ý ta -->
+
+    <!-- <ul>
+      <li class="odd:bg-red-500">abc</li>
+    </ul> -->
+
+    <!-- <div
+      before=""
+      class="
+        w-10 h-10 
+        flex items-center justify-center 
+        text-[#00aefd] mx-auto my-5 
+        rounded-xl
+        relative 
+        before:content-[attr(before)] 
+        before:absolute
+        before:inset-0
+        before:rounded-xl
+        before:bg-current
+        before:opacity-25
+      "
+    >
+      <ion-icon name="airplane-outline"></ion-icon>
+    </div> -->
+
+    <!-- <label for="toggle" class="inline-block cursor-pointer toggle-switch">
+      <input
+        type="checkbox"
+        name=""
+        id="toggle"
+        class="darkmode-input hidden"
+      />
+      <div
+        class="w-[100px] h-[40px] border border-[#ccc] rounded-full fixed right-5 bottom-5 z-50 p-[5px] transition-colors"
+      >
+        <div
+          class="w-7 h-7 bg-[#ccc] rounded-full transition-transform darkmode-spinner"
+        ></div>
+      </div>
+    </label>
+    <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5">
+      <div
+        class="px-5 py-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0f0d58]"
+      >
+        <img
+          src="https://free3dicon.com/wp-content/uploads/2022/03/departure-300x300.png.webp"
+          class="mb-5 max-w-[100px] mx-auto"
+        />
+        <h3 class="text-lg font-semibold mb-6 text-[#0f0d58] dark:text-white">
+          Recommendation
+        </h3>
+        <div
+          class="text-sm leading-loose text-[#9191b4] font-normal dark:text-white"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+        </div>
+      </div>
+    </div>
+    <script>
+      const toggleSwitch = document.querySelector(
+        '.toggle-switch input[type="checkbox"]'
+      );
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.documentElement.setAttribute("class", currentTheme);
+        if (currentTheme === "dark") {
+          toggleSwitch.checked = true;
+        }
+      }
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute("class", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.setAttribute("class", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+      toggleSwitch.addEventListener("change", switchTheme);
+    </script> -->
+  
+    <!-- <div class="max-w-[1140px] mx-auto flex items-center">
+      <div class="w-full max-w-[555px]">
+        <h1 class="text-[#0b132a] text-[50px] font-medium mb-5">
+          Want anything to be easy with <strong>LaslesVPN</strong>
+        </h1>
+        <p class="text-[#4f5665] mb-[50px]">
+          Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong> discover interesting features from us
+        </p>
+        <a href="#" class="inline-block text-white font-bold p-4 w-full max-w-[250px] bg-[#f53838] rounded-[10px] text-center">Get Started</a>
+      </div>
+      <div class="pl-10">
+        <img src="https://i.pinimg.com/236x/18/c7/00/18c70096efddd80b523780c941d4296a.jpg" alt="">
+      </div>
+    </div> -->
+  
+    <!-- <div class="grid auto-cols-[90%] grid-flow-col gap-x-5 overflow-x-auto scroll-snap-mandatory scroll-snap-always">
+      <div class="h-[200px] scroll-snap-start">
+        <img src="https://i.pinimg.com/236x/18/c7/00/18c70096efddd80b523780c941d4296a.jpg" alt="" class="w-full h-full object-cover">
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img src="https://i.pinimg.com/236x/18/c7/00/18c70096efddd80b523780c941d4296a.jpg" alt="" class="w-full h-full object-cover">
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img src="https://i.pinimg.com/236x/18/c7/00/18c70096efddd80b523780c941d4296a.jpg" alt="" class="w-full h-full object-cover">
+      </div>
+      <div class="h-[200px] scroll-snap-start">
+        <img src="https://i.pinimg.com/236x/18/c7/00/18c70096efddd80b523780c941d4296a.jpg" alt="" class="w-full h-full object-cover">
+      </div>
+    </div> -->
+
+  </body>
+</html>
